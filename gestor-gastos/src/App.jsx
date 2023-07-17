@@ -7,16 +7,16 @@ function App() {
   const [presupuesto, setPresupuesto] = useState(0);
   const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
 
-  const [modal, setModal] = useState(false)
-  const {animarModal, setAnimarModal} = useState(false)
+  const [modal, setModal] = useState(false);
+  const [animarModal, setAnimarModal] = useState(false);
 
   const handleNuevoGasto = () => {
-    setModal(true)
+    setModal(true);
 
     setTimeout(() => {
-      setAnimarModal(true)
-    }, 3000);
-  }
+      setAnimarModal(true);
+    }, 500);
+  };
 
   return (
     <div>
@@ -29,14 +29,17 @@ function App() {
       {isValidPresupuesto && (
         <div className="nuevo-gasto">
           <img
-          src={IconoNuevoGasto}
-          alt="icono nuevo gasto"
-          onClick={handleNuevoGasto} />
+            src={IconoNuevoGasto}
+            alt="icono nuevo gasto"
+            onClick={handleNuevoGasto}
+          />
         </div>
       )}
       {modal && <Modal
-        setModal={setModal}
-      />}
+          setModal={setModal}
+          animarModal={animarModal}
+          setAnimarModal={setAnimarModal}
+        />}
     </div>
   );
 }
