@@ -5,7 +5,7 @@ import IconoCasa from '../src/img/icono_casa.svg'
 import IconoComida from '../src/img/icono_comida.svg'
 import IconoGastos from '../src/img/icono_gastos.svg'
 import IconoOcio from '../src/img/icono_ocio.svg'
-import IconoOcio from '../src/img/icono_salud.svg'
+import IconoSalud from '../src/img/icono_salud.svg'
 import IconoSuscripciones from '../src/img/icono_suscripciones.svg'
 
 const diccionarioIconos = {
@@ -14,7 +14,7 @@ const diccionarioIconos = {
   casa : IconoCasa,
   gastos : IconoGastos,
   ocio : IconoOcio,
-  salud : IconoOcio,
+  salud : IconoSalud,
   suscripciones :IconoSuscripciones
 }
 
